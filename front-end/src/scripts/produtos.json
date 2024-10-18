@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nome": "Iphone 12",
+        "preco": 2500,
+        "imagem": "src/img/iphone12_01.jpg",
+        "descricao": "lorem ipsum deli"
+    },
+    {
+        "id": 2,
+        "nome": "Iphone 15",
+        "preco": 6500,
+        "imagem": "src/img/iphone15_01.jpg",
+        "descricao": "lorem ipsum deli"
+    },
+    {
+        "id": 3,
+        "nome": "Iphone 15",
+        "preco": 6500,
+        "imagem": "src/img/iphone15_01.jpg",
+        "descricao": "lorem ipsum deli"
+    }
+]
