@@ -19,5 +19,26 @@
         "preco": 6500,
         "imagem": "src/img/iphone15_01.jpg",
         "descricao": "lorem ipsum deli"
+    },
+    {
+        "id": 4,
+        "nome": "Iphone 15",
+        "preco": 6500,
+        "imagem": "src/img/iphone15_01.jpg",
+        "descricao": "lorem ipsum deli"
+    },
+    {
+        "id": 5,
+        "nome": "Iphone 15",
+        "preco": 6500,
+        "imagem": "src/img/iphone15_01.jpg",
+        "descricao": "lorem ipsum deli"
+    },
+    {
+        "id": 6,
+        "nome": "Iphone 15",
+        "preco": 6500,
+        "imagem": "src/img/iphone15_01.jpg",
+        "descricao": "lorem ipsum deli"
     }
 ]
