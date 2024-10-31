@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq Eletronicos</title>
+
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/cart.css">
+    <link rel="stylesheet" href="src/styles/productTable.css">
+
+    <script src="src/scripts/adcProdutos.js" defer></script>
+    <script src="src/scripts/cart.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Arq Eletrônicos</h2>
+
+        </nav>
+    </header>
+    <main id="main-container">
+        <div class="produto-container">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Marca</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                    <th>Imagem</th>
+                    <th>Adcionado em</th>
+                    <th>Ação</th>
+                </tr>
+                <tr>
+                    <td name="id" id="id">1</td>
+                    <td name="nome" id="nome">Iphone 12</td>
+                    <td name="marca" id="marca" >Apple</td>
+                    <td name="categoria" id="celular">Celular</td>
+                    <td name="preco" id="preco">R$12000.00</td>
+                    <td name="imagem" id="imagem" ><img src="src/img/iphone12_01.jpg" alt=""></td>
+                    <td name="data_adcionado">2024-05-06</td>
+                    <td><button type="button" class="buttonTable bEdit">Editar</button>
+                        <button type="button" class="buttonTable bDelete">Deletar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td name="id" id="id">2</td>
+                    <td name="nome" id="nome">Iphone 12</td>
+                    <td name="marca" id="marca" >Apple</td>
+                    <td name="categoria" id="celular">Celular</td>
+                    <td name="preco" id="preco">R$12000.00</td>
+                    <td name="imagem" id="imagem" ><img src="src/img/iphone15_01.jpg" alt=""></td>
+                    <td name="data_adcionado">2024-07-23</td>
+                    <td><button type="button" class="buttonTable bEdit">Editar</button>
+                        <button type="button" class="buttonTable bDelete">Deletar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td name="id" id="id">3</td>
+                    <td name="nome" id="nome">Iphone 12</td>
+                    <td name="marca" id="marca" >Apple</td>
+                    <td name="categoria" id="celular">Celular</td>
+                    <td name="preco" id="preco">R$12000.00</td>
+                    <td name="imagem" id="imagem" ><img src="src/img/iphone12_01.jpg" alt=""></td>
+                    <td name="data_adcionado">2024-10-06</td>
+                    <td><button type="button" class="buttonTable bEdit">Editar</button>
+                        <button type="button" class="buttonTable bDelete">Deletar</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </main>
+
+    <div class="cartTab">
+        <h1>Carrinho de Compras</h1>
+        <div class="listCart">
+        </div>
+        <div id="cartBtn">
+            <button id="cartClose" class="bn1">Fechar</button>
+            <button id="cartPay" class="bn1">Pagar</button>
+        </div>
+    </div>
+
+    <footer id="footer-container">
+        <div id="logo-direitos">
+            <h1>Arq.</h1>
+            <p>2024 Arq. Todos os direitos reservados.</p>
+        </div>
+        <div class="coluna-ativos">
+            <a href="#">Celulares</a>
+            <a href="#">Tablets</a>
+            <a href="#">NoteBooks</a>
+        </div>
+        <div class="coluna-ativos">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+        </div>
+        <div class="coluna-ativos">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+        </div>
+    </footer>
+</body>
+
+</html>
