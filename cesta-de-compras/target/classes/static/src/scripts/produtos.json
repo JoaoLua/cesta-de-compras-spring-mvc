@@ -1,9 +1,0 @@
-[
-    {
-        "id": 1,
-        "nome": "Iphone 12",
-        "preco": 2500,
-        "imagem": "src/img/iphone12_01.jpg",
-        "descricao": "lorem ipsum deli"
-    }
-]
