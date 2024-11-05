@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*  {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        margin-left: .8rem;
+    }
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    a:hover {
+        transition: .3s;
+        text-decoration: underline;
+        color: #0784b5;
+    }
+    .cart-login-container {
+        display: flex;
+        align-items: center;
+        h3 {
+            background-color: #0784b5;
+            border-radius: 4px;
+            padding: 4px;
+            margin-left: 10px;
+            a:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+}
+
+#main-container {
+    display: flex;
+    justify-content:center;
+    
+    flex-direction: column;
+    color: #1d1d1d;
+
+    margin: 3rem;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    #produto-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        gap: 5rem;
+
+
+        img {
+            width: 25rem;
+            height: 25rem;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #descricao-container {
+            .botoes {
+                margin-top: 25%;
+            }
+        }
+    }
+}
+
+.bn1 {
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.6rem 1.7rem;
+    border: 1px solid #1d1d1d;
+    margin: 0 0.3rem 0.3rem 0;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s;
+    width: 100%;
+    cursor: pointer;
+}
+  
+.bn1:hover {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    #produto-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .navbar {
+        flex-direction: column; /* Muda para coluna */
+        padding: 1rem;
+        h2 {
+            font-size: 0;
+        }
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Itens empilhados verticalmente */
+        width: 100%; /* Ocupará 100% da largura */
+        align-items: center; /* Centraliza os itens */
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
