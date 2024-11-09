@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Arq Eletrônicos</title>
+
+    <link rel="stylesheet" type="text/css" href="/src/styles/style.css" media="screen" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="login">
+        <h1>Login</h1>
+		<p  th:text="${message}"></p> 
+        <form th:action="@{/logar}" method="post"  th:object="${usuario}" >
+            <div class="logsen">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="logsen">
+                <label for="senha">senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+
+            <p>Não tem cadastro? <a th:href="@{/registro/}"> Registre-se!</a></p>
+            
+            <button type="submit" id="submit-button">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
