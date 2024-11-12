@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="/src/styles/registroCliente.css" media="screen" />
+	<link rel="stylesheet" href="/src/styles/footer.css">
+	<title>Arq - Editar Dados</title>
+</head>
+
+<body>
+	<header>
+	    <nav class="navbar">
+			
+	        <h2>Arq Eletrônicos</h2>
+
+			<p th:text="${message}"></p>
+
+			<div class="cart-login-container">
+				<h3><a th:href="@{/login/}" rel="noopener noreferrer">Login</a></h3>
+			</div>
+	    </nav>
+	</header>
+	<main>
+		<div class="container">
+			<form th:action="@{/carrinho/editar}" method="post">
+			    <h2 th:text="${nome}"></h2>
+			    <h3>Edite suas informações de envio.</h3>
+			    
+			    <label for="nome">Nome Completo:</label>
+			    <input type="text" name="nome" th:value="${dadosdto.nome}" required>
+
+			    <label for="cpf">CPF:</label>
+			    <input type="text" name="cpf" id="cpf" th:value="${dadosdto.cpf}" required>
+
+			    <div class="divInput">
+			        <div>
+			            <label for="telefone">Telefone:</label>
+			            <input type="text" name="telefone" id="telefone" th:value="${dadosdto.telefone}" required>
+			        </div>
+
+			        <div>
+			            <label for="cep">CEP:</label>
+			            <input type="text" name="cep" id="cep" th:value="${dadosdto.cep}" required>
+			        </div>
+			    </div>
+
+			    <div class="divInput">
+			        <div>
+			            <label for="cidade">Cidade:</label>
+			            <input type="text" name="cidade" id="cidade" th:value="${dadosdto.cidade}" required>
+			        </div>
+			        <div>
+			            <label for="bairro">Bairro:</label>
+			            <input type="text" name="bairro" id="bairro" th:value="${dadosdto.bairro}" required>
+			        </div>
+			    </div>
+
+			    <div class="divInput">
+			        <div>
+			            <label for="rua">Rua:</label>
+			            <input type="text" name="rua" id="rua" th:value="${dadosdto.rua}" required>
+			        </div>
+			        <div>
+			            <label for="numero">Número:</label>
+			            <input type="number" name="numero" id="numero" th:value="${dadosdto.numero}" required>
+			        </div>
+			    </div>
+
+			    <label for="complemento">Complemento:</label>
+			    <input type="text" name="complemento" id="complemento" th:value="${dadosdto.complemento}" required>
+			    
+			    <input type="submit" value="Editar Dados de Envio" class="submitBtn">
+			</form>
+		</div>
+	</main>
+	<footer id="footer-container">
+		<div id="logo-direitos">
+			<h1>Arq.</h1>
+			<p>2024 Arq. Todos os direitos reservados.</p>
+		</div>
+		<div class="coluna-ativos">
+			<a href="#">Celulares</a>
+			<a href="#">Tablets</a>
+			<a href="#">NoteBooks</a>
+		</div>
+		<div class="coluna-ativos">
+			<a href="#">Instagram</a>
+			<a href="#">Facebook</a>
+			<a href="#">Contato</a>
+			<a href="#">Sobre</a>
+		</div>
+		<div class="coluna-ativos">
+			<a href="#">Política de Privacidade</a>
+			<a href="#">Termos de Serviço</a>
+		</div>
+	</footer>
+</body>
+
+</html>

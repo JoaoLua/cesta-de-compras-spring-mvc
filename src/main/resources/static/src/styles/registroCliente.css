@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark1:  #151515;
+    --dark2:  #2d383c; 
+    --dark3:  #414c50;
+    --azul1:  #0784b5;
+    --azul2:  #39ace7;
+    --branco: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.navbar {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: #fff;
+	ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        margin-left: .8rem;
+    }
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    a:hover {
+        transition: .3s;
+        text-decoration: underline;
+        color: #0784b5;
+    }
+    .cart-login-container {
+        display: flex;
+        align-items: center; /* Centraliza o ícone e o login verticalmente */
+        h3 {
+            background-color: #0784b5;
+            border-radius: 4px;
+            padding: 4px;
+            margin-left: 10px; /* Espaçamento entre o ícone do carrinho e o login */
+            a:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+}
+
+
+body {
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--dark1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    max-width: 25rem;
+    font-size: 1rem;
+    input {
+        color: var(--dark1);
+        width: 100%;
+        padding: 15px 8px 8px 5px;
+        border: 1px solid rgba(105, 105, 105, 0.397);
+        border-radius: 10px;
+    }
+}
+
+.divInput {
+    display: flex;
+    gap: 2rem;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 7px;
+    transition: .4s;
+    color: var(--dark1);
+    background-color: var(--azul2);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    transition: .4s;
+    background: linear-gradient(90deg, rgba(7,132,181,1) 0%, rgba(57,172,231,1) 100%);
+}

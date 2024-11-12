@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Serviço - Arq Eletrônicos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/src/styles/footer.css">
+	<link rel="stylesheet" href="/src/styles/politica.css">
+</head>
+<body>
+	<header>
+	    <nav class="navbar">
+			
+	        <h2> <a th:href="@{/}"> Arq Eletrônicos</a></h2>
+
+			<p th:text="${message}"></p>
+
+			<div class="cart-login-container">
+				<h3><a th:href="@{/login/}" rel="noopener noreferrer">Login</a></h3>
+			</div>
+	    </nav>
+	</header>
+    <main class="container my-5">
+        <h2 class="text-center">Termos de Serviço</h2>
+        <p class="text-muted text-center mb-5">Última atualização: 31 de outubro de 2024</p>
+
+        <section>
+            <h4>1. Aceitação dos Termos</h4>
+            <p>Ao acessar e utilizar o site da Arq Eletrônicos, você concorda em cumprir estes Termos de Serviço e todas as leis e regulamentos aplicáveis. Se você não concorda com algum dos termos, não deverá utilizar este site.</p>
+        </section>
+
+        <section>
+            <h4>2. Uso do Site</h4>
+            <p>O usuário concorda em utilizar o site apenas para fins legais. É proibido publicar ou transmitir conteúdos ilícitos, ameaçadores, ofensivos ou que possam constituir ou encorajar conduta considerada criminosa.</p>
+        </section>
+
+        <section>
+            <h4>3. Contas de Usuário</h4>
+            <p>Para acessar algumas funcionalidades do site, é necessário criar uma conta. Você é responsável por manter a confidencialidade de sua conta e senha e por todas as atividades que ocorrem sob sua conta.</p>
+        </section>
+
+        <section>
+            <h4>4. Política de Privacidade</h4>
+            <p>Consulte nossa <a href="/politica-privacidade" class="text-primary">Política de Privacidade</a> para entender como coletamos, usamos e protegemos suas informações pessoais.</p>
+        </section>
+
+        <section>
+            <h4>5. Produtos e Preços</h4>
+            <p>A Arq Eletrônicos se esforça para fornecer descrições e informações de produtos precisas, mas não garante que descrições, preços ou outros conteúdos sejam totalmente precisos ou atualizados.</p>
+        </section>
+
+        <section>
+            <h4>7. Propriedade Intelectual</h4>
+            <p>Todos os conteúdos do site, incluindo textos, imagens, logos e design, são de propriedade da Arq Eletrônicos ou licenciados para seu uso. É proibida a reprodução sem autorização expressa.</p>
+        </section>
+
+        <section>
+            <h4>8. Limitação de Responsabilidade</h4>
+            <p>A Arq Eletrônicos não se responsabiliza por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes do uso ou da incapacidade de usar o site e seus serviços.</p>
+        </section>
+
+        <section>
+            <h4>9. Alterações dos Termos</h4>
+            <p>A Arq Eletrônicos reserva-se o direito de modificar estes Termos de Serviço a qualquer momento. O uso continuado do site após alterações indica aceitação dos novos termos.</p>
+        </section>
+
+        <section>
+            <h4>10. Contato</h4>
+            <p>Para dúvidas sobre os Termos de Serviço, entre em contato conosco pelo e-mail <a href="mailto:contato@arqeletronicos.com.br">contato@arqeletronicos.com.br</a>.</p>
+        </section>
+    </main>
+	<footer id="footer-container">
+	    <div id="logo-direitos">
+	        <h1>Arq.</h1>
+	        <p>2024 Arq. Todos os direitos reservados.</p>
+	    </div>
+	    <div class="coluna-ativos">
+	        <a th:href="@{/}">Celulares</a>
+	        <a th:href="@{/}">Tablets</a>
+	        <a th:href="@{/}">NoteBooks</a>
+	    </div>
+	    <div class="coluna-ativos">
+	        <a href="https://www.instagram.com/">Instagram</a>
+	        <a href="https://www.facebook.com">Facebook</a>
+	        <a href="https://www.whatsapp.com">Contato</a>
+	    </div>
+	    <div class="coluna-ativos">
+	        <a th:href="@{/politica-de-privacidade}">Política de Privacidade</a>
+	        <a th:href="@{/termos-de-uso}">Termos de Serviço</a>
+	    </div>
+	</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
