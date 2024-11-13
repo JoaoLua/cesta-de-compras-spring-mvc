@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq Eletronicos</title>
+
+    <link rel="stylesheet" href="/src/styles/home.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
+    <link rel="stylesheet" href="/src/styles/cart.css">
+
+    <script src="src/scripts/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+			
+            <h2> <a th:href="@{/}"> Arq Eletrônicos</a></h2>
+
+			<p th:text="${message}"></p>
+
+			<div class="cart-login-container">
+				<h3><a th:href="@{/login/}" rel="noopener noreferrer">Login</a></h3>
+			</div>
+        </nav>
+    </header>
+    <main id="main-container">
+	
+        <div class="produto-container">		
+			<div class="produto" th:each="produto : ${produtos}">
+				<img th:src="@{img/{imagem}(imagem=${produto.imagem})}" alt="${produto.nome}">
+				<p th:text="${produto.nome}"></p>
+				<p th:text="${#numbers.formatDecimal(produto.preco, 2, 'POINT', 2, 'COMMA')}"></p>
+				<button class="bn1" id="ver-produto"><a th:href="@{/detail(id=${produto.id})}">Ver Produto</a></button>
+			</div>
+        </div>
+    </main>
+
+    <div class="cartTab">
+        <h1>Carrinho de Compras</h1>
+        <div class="listCart">
+        </div>
+        <div id="cartBtn">
+            <button id="cartClose" class="bn1">Fechar</button>
+            <button id="cartPay" class="bn1">Pagar</button>
+        </div>
+    </div>
+
+    <footer id="footer-container">
+        <div id="logo-direitos">
+            <h1>Arq.</h1>
+            <p>2024 Arq. Todos os direitos reservados.</p>
+        </div>
+        <div class="coluna-ativos">
+            <a th:href="@{/}">Celulares</a>
+            <a th:href="@{/}">Tablets</a>
+            <a th:href="@{/}">NoteBooks</a>
+        </div>
+        <div class="coluna-ativos">
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.whatsapp.com">Contato</a>
+        </div>
+        <div class="coluna-ativos">
+            <a th:href="@{/politica-de-privacidade}">Política de Privacidade</a>
+            <a th:href="@{/termos-de-uso}">Termos de Serviço</a>
+        </div>
+    </footer>
+</body>
+</html>
