@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*  {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+	ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        margin-left: .8rem;
+    }
+	h2{
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 2rem;
+		} 
+		a:hover{
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    a:hover {
+        transition: .3s;
+        text-decoration: underline;
+        color: #0784b5;
+    }
+    .cart-login-container {
+        display: flex;
+        align-items: center; /* Centraliza o ícone e o login verticalmente */
+        h3 {
+            background-color: #0784b5;
+            border-radius: 4px;
+            padding: 4px;
+            margin-left: 10px; /* Espaçamento entre o ícone do carrinho e o login */
+            a:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        padding: 1rem;
+        h2 {
+            font-size: 0;
+        }
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        width: 100%; 
+        align-items: center; 
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .navbar a {
+        font-size: 1rem; 
+    }
+}
